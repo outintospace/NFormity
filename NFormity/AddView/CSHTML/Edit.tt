@@ -75,49 +75,62 @@ if (mvcHost.ReferenceScriptLibraries) {
 #>
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
-    <fieldset>
-        <legend><#= mvcHost.ViewDataType.Name #></legend>
-
+<table style="width: 100%; border-style: hidden; border-collapse: collapse;">
 <#
 foreach (ModelProperty property in GetModelProperties(mvcHost.ViewDataType)) {
-    if (!property.IsPrimaryKey && !property.IsReadOnly && property.Scaffold) {
+    if (property.Scaffold) {
+        if (property.IsPrimaryKey) {
 #>
-        <div class="editor-label">
-<#
-        if (property.IsForeignKey) {
-#>
-            @Html.LabelFor(model => model.<#= property.Name #>, "<#= property.AssociationName #>")
-<#
-        } else {
-#>
-            @Html.LabelFor(model => model.<#= property.Name #>)
-<#
-        }
-#>
-        </div>
-        <div class="editor-field">
-<#
-        if (property.IsForeignKey) {
-#>
-            @Html.DropDownList("<#= property.Name #>", String.Empty)
-<#
-        } else {
-#>
-            @Html.EditorFor(model => model.<#= property.Name #>)
-<#
-        }
-#>
-            @Html.ValidationMessageFor(model => model.<#= property.Name #>)
-        </div>
+        @Html.HiddenFor(model => model.<#= property.Name #>)
 
 <#
+        } else if (!property.IsReadOnly) {
+#>
+	<tr>
+		<td>
+        	<div class="editor-label">
+<#
+            if (property.IsForeignKey) {
+#>
+    	        @Html.LabelFor(model => model.<#= property.Name #>, "<#= property.AssociationName #>")
+<#
+            } else {
+#>
+        	    @Html.LabelFor(model => model.<#= property.Name #>)
+<#
+            }
+#>
+        	</div>
+		</td>
+		<td>
+        	<div class="editor-field">
+<#
+            if (property.IsForeignKey) {
+#>
+            	@Html.DropDownList("<#= property.Name #>", String.Empty)
+<#
+            } else {
+#>
+            	@Html.EditorFor(model => model.<#= property.Name #>)
+<#
+            }
+#>
+            	@Html.ValidationMessageFor(model => model.<#= property.Name #>)
+        	</div>
+		</td>
+	</tr>
+
+<#
+        }
     }
 }
 #>
-        <p>
-            <input type="submit" value="Create" />
-        </p>
-    </fieldset>
+	<tr>
+		<td>
+            <input type="submit" value="Save" />
+		</td>
+	</tr>
+</table>
 }
 
 <div>

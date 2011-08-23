@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFormity", "NFormity.csproj", "{50CC31EC-3128-4CAC-8ACD-51AEE577A014}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NFormity", "NFormity\NFormity.csproj", "{50CC31EC-3128-4CAC-8ACD-51AEE577A014}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

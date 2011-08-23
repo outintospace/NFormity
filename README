@@ -1,5 +1,15 @@
-When I build Ruby on Rails apps, I like to use Justin French's awesome Formtastic gem. When I build ASP.NET MVC apps, I'm always futzing with the T4 templates to make them work the way I want them to.
+NFormity
 
-So, I decided to create NFormity, which is simply a collection of T4 templates used for generating views in ASP.NET MVC 3. Right now, they're all Razor, but in the future, I'll add NHaml. I'm also open to ASPX if anyone wants to do a pull request.
+NFormity is a reimagining of the ASP.NET MVC 3 view generators. It just pretties up the layout a bit. When I build Ruby on Rails apps, I like to use Justin French's awesome Formtastic gem. When I build ASP.NET MVC apps, I'm always futzing with the T4 templates to make them work the way I want them to.
 
-I would love to do something more like Formtastic in the future. This is just a start.
+So, I decided to create NFormity, which is simply a collection of T4 templates used for generating views in ASP.NET MVC 3.
+
+What does the future hold? Perhaps NHaml templates, maybe some actual form element manipulation like Formtastic.
+
+How to Use the Templates
+
+In the root of your ASP.NET MVC project, create a folder called CodeTemplates. Put the contents of the NFormity project in there.
+
+License
+
+These files are modifications of the original templates shipped with Visual Studio 2010. Your license to use the templates is governed by the Microsoft license that you agreed to when installing Visual Studio 2010.
