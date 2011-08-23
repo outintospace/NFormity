@@ -43,42 +43,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Razor\Create.cshtml">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Create.tt</DependentUpon>
-    </None>
-    <None Include="Razor\Create.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Create.cshtml</LastGenOutput>
-    </None>
-    <None Include="Razor\Delete.cshtml">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Delete.tt</DependentUpon>
-    </None>
-    <None Include="Razor\Delete.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Delete.cshtml</LastGenOutput>
-    </None>
-    <None Include="Razor\Details.cshtml">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Details.tt</DependentUpon>
-    </None>
-    <None Include="Razor\Details.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Details.cshtml</LastGenOutput>
-    </None>
-    <None Include="Razor\Edit.cshtml">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Edit.tt</DependentUpon>
-    </None>
-    <None Include="Razor\Edit.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Edit.cshtml</LastGenOutput>
-    </None>
+    <None Include="AddView\AspxCSharp\Create.tt" />
+    <None Include="AddView\AspxCSharp\Delete.tt" />
+    <None Include="AddView\AspxCSharp\Details.tt" />
+    <None Include="AddView\AspxCSharp\Edit.tt" />
+    <None Include="AddView\AspxCSharp\Empty.tt" />
+    <None Include="AddView\AspxCSharp\List.tt" />
+    <None Include="AddView\CSHTML\Create.tt" />
+    <None Include="AddView\CSHTML\Delete.tt" />
+    <None Include="AddView\CSHTML\Details.tt" />
+    <None Include="AddView\CSHTML\Edit.tt" />
+    <None Include="AddView\CSHTML\Empty.tt" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
