@@ -13,3 +13,5 @@ In the root of your ASP.NET MVC project, create a folder called CodeTemplates. P
 License
 
 These files are modifications of the original templates shipped with Visual Studio 2010. Your license to use the templates is governed by the Microsoft license that you agreed to when installing Visual Studio 2010.
+
+Modifications to the files are copyright 2011 Robert Standefer, released under the MIT license.
