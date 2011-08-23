@@ -1,0 +1,5 @@
+When I build Ruby on Rails apps, I like to use Justin French's awesome Formtastic gem. When I build ASP.NET MVC apps, I'm always futzing with the T4 templates to make them work the way I want them to.
+
+So, I decided to create NFormity, which is simply a collection of T4 templates used for generating views in ASP.NET MVC 3. Right now, they're all Razor, but in the future, I'll add NHaml. I'm also open to ASPX if anyone wants to do a pull request.
+
+I would love to do something more like Formtastic in the future. This is just a start.
